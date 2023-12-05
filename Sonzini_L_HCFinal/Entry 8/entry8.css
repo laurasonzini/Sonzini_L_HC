@@ -1,0 +1,171 @@
+.sky {
+  width: 100%;
+  height: 100vh;
+  background-color: #87CEEB; /* Set the initial sky color */
+  position: relative;
+}
+
+.sun {
+  width: 180px;
+  height: 180px; /* Adjust the width and height as needed for your sun image */
+  background-image: url('https://cdn.discordapp.com/attachments/1158576612300824598/1171296904764723301/Sol_de_Mayo-Bandera_de_Argentina.svg.png?ex=655c2a3f&is=6549b53f&hm=c7f111484b8be4ccd73e2c78268c2d608aadb38c9b7e12dc3747fce7a2bddb84&'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  top: 300px;
+  left: 450px;
+}
+
+.cloud {
+  width: 250px;
+  height: 180px;
+  background-image: url('https://cdn.discordapp.com/attachments/1158576612300824598/1171295849154891806/cloud.png?ex=655c2944&is=6549b444&hm=7d8a6abf54eea2e0b1e1c920e7fd924be7bcda58ca2fcec2a3e5d74b1ede5326&');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50px;
+  left: 0;
+   z-index: 9999;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    background-color: palevioletred !important ; /
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+#first-entry {
+    float: right; 
+    margin-right: 20px; /* Add spacing between this item and the previous one */
+}
+
+#first-entry a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+#first-entry span {
+    margin-left: 5px; /* Add some spacing between the text and arrow */
+}
+
+#first-entry .arrow {
+    display: inline-block;
+    margin-left: 5px; /* Initial position */
+}
+
+
+li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add some spacing between list items */
+}
+a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Text color for links */
+font-family: 'Quicksand', sans-serif; /* Use Arial as the font, fallback to sans-serif if Arial is not available */
+font-weight: regular;}
+
+/* Sky, sun, and cloud styles... */
+
+.sun-container,
+.cloud-container {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+    width: 100px; /* Adjust the width to your preference */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.sun-covered .cloud-container,
+.cloud-covered .sun-container {
+  display: none;
+}
+
+.sun-covered .sun-container,
+.cloud-covered .cloud-container {
+  display: block;
+  /* Adjust the styles or positioning of these containers based on your layout */
+}
+
+/* Styles for sun, cloud, and other images */
+
+
+.cloud-image {
+  position: absolute;
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  /* Other styles */
+}
+
+.cloud-image:nth-child(1) {
+  top: -60px; /* Adjust positioning */
+  left: 300px; /* Adjust positioning */
+}
+
+.cloud-image:nth-child(2) {
+  top: 400px; /* Adjust positioning */
+  left: -50px; /* Adjust positioning */
+}
+
+.cloud-image:nth-child(3) {
+  top: 50px; /* Adjust positioning */
+  left: 700px; /* Adjust positioning */
+}
+.cloud-image:nth-child(4) {
+  top: 100px; /* Adjust positioning */
+  left: -80px; /* Adjust positioning */
+}
+.cloud-image:nth-child(5) {
+  top: 300px; /* Adjust positioning */
+  left: 550px; /* Adjust positioning */
+}
+.cloud-image:nth-child(6) {
+  top: 400px; /* Adjust positioning */
+  left: 700px; /* Adjust positioning */
+}
+.cloud-image:nth-child(7) {
+  top: 30px; /* Adjust positioning */
+  left: 450px; /* Adjust positioning */
+}
+.cloud-image:nth-child(8) {
+  top: 10px; /* Adjust positioning */
+  left: 10px; /* Adjust positioning */
+}
+.cloud-image:nth-child(9) {
+  top: 350px; /* Adjust positioning */
+  left: 400px; /* Adjust positioning */
+}
+
+/* Define a blinking animation */
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+/* Apply the blinking animation to cloud images */
+.cloud-image {
+  animation: blink 2s infinite; /* Adjust the duration or other properties as needed */
+}
+
+
+
+
+
+
+

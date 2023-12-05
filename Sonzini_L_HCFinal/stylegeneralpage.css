@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+ 
+nav {
+    background-color: palevioletred !important ; 
+}
+
+ul {
+    list-style-type: none; /
+    padding: 0; 
+}
+#first-entry {
+    float: right; 
+    margin-right: 20px; 
+}
+
+#first-entry a {
+    color: white; 
+    text-decoration: none; 
+}
+
+#first-entry span {
+    margin-left: 5px; 
+    animation: none;
+}
+
+#first-entry .arrow {
+    display: inline-block;
+    margin-left: 5px; 
+}
+
+
+li {
+    display: inline; 
+    margin-right: 20px; /
+}
+
+
+/* NAV BAR TEXT VISUALS*/
+a {
+    text-decoration: none; 
+    color: white; 
+font-family: 'Quicksand', sans-serif; 
+font-weight: bold;}
+
+.background {
+    background-image: url('https://cdn.discordapp.com/attachments/1158576612300824598/1158580462072123513/background.png?ex=651cc3a3&is=651b7223&hm=f602059e22d960bbb6f8ed8aa5bc9fd703768bebd27a9cd52f8e88272b5aa326&'); /* Replace with your background image URL */
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.text-box {
+    font-size: 15vh;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+}
+span {
+    animation: mover 6s linear infinite;
+    display: inline-block;
+    color: #fff;
+    font-weight: bolder;
+}
+@keyframes mover
+{
+    0%{
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+      }
+    50%{
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0.30);
+        transform: translateY(30px);
+      }
+    100%
+      {
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+      }
+}
+span:nth-child(1)
+{
+    animation-delay: 0.5s;
+}
+span:nth-child(2)
+{
+    animation-delay: 1s;
+}
+span:nth-child(3)
+{
+    animation-delay: 1.5s;
+}
+span:nth-child(4)
+{
+    animation-delay: 2s;
+}
+span:nth-child(5)
+{
+    animation-delay: 2.5s;
+}
+span:nth-child(6)
+{
+    animation-delay: 3s;
+}
+span:nth-child(7)
+{
+    animation-delay: 3.5s;
+}
+
+/* CSS for smaller images */
+.floating-image {
+    position: relative;
+    width: 12vh; /* Set the width to your desired size */
+    height: 12vh; /* Set the height to your desired size */
+    top: 70vmin; /* Adjust the top position for the first image */
+    left: 74vmin; /* Adjust the left position for the first image */
+}
+
+.floating-image2 {
+    position: relative;
+    width: 100px; /* Set the width to your desired smaller size */
+    height: 100px; /* Set the height to your desired smaller size */
+    top: 100px; /* Adjust the top position for the second image */
+    left: 270px; /* Adjust the left position for the second image */
+}
+
+.floating-image3 {
+    position: absolute;
+    width: 70px; /* Set the width to your desired smaller size */
+    height: 70px; /* Set the height to your desired smaller size */
+    top: 150px; /* Adjust the top position for the second image */
+    left: 540px; /* Adjust the left position for the second image */
+}
+.floating-image4 {
+    position: absolute;
+    width: 80px; 
+    height: 80px; /* Set the height to your desired smaller size */
+    top: 530px; /* Adjust the top position for the second image */
+    left: 700px; /* Adjust the left position for the second image */
+}
+.floating-image5 {
+    position: absolute;
+    width: 90px; /* Set the width to your desired smaller size */
+    height: 90px; /* Set the height to your desired smaller size */
+    top: 480px; /* Adjust the top position for the second image */
+    left: 910px; /* Adjust the left position for the second image */
+}
+.floating-image6 {
+    position: absolute;
+    width: 70px; /* Set the width to your desired smaller size */
+    height: 70px; /* Set the height to your desired smaller size */
+    top: 300px; /* Adjust the top position for the second image */
+    left: 840px; /* Adjust the left position for the second image */
+}
+.floating-image7 {
+    position: absolute;
+    width: 110px; /* Set the width to your desired smaller size */
+    height: 110px; /* Set the height to your desired smaller size */
+    top: 360px; /* Adjust the top position for the second image */
+    left: 50px; /* Adjust the left position for the second image */
+}
+.floating-image8 {
+    position: absolute;
+    width: 80px; /* Set the width to your desired smaller size */
+    height: 80px; /* Set the height to your desired smaller size */
+    top: 100px; /* Adjust the top position for the second image */
+    left: 50px; /* Adjust the left position for the second image */
+}
+.floating-image9 {
+    position: absolute;
+    width: 80px; /* Set the width to your desired smaller size */
+    height: 80px; /* Set the height to your desired smaller size */
+    top: 530px; /* Adjust the top position for the second image */
+    left: 270px; /* Adjust the left position for the second image */
+}
+.floating-image10 {
+    position: absolute;
+    width: 80px; /* Set the width to your desired smaller size */
+    height: 80px; /* Set the height to your desired smaller size */
+    top: 100px; /* Adjust the top position for the second image */
+    left: 800px; /* Adjust the left position for the second image */
+}
+.floating-image11 {
+    position: absolute;
+    width: 80px; /* Set the width to your desired smaller size */
+    height: 80px; /* Set the height to your desired smaller size */
+    top: 300px; /* Adjust the top position for the second image */
+    left: 980px; /* Adjust the left position for the second image */
+}
+
+.hoverable-image:hover {
+    transform: translateY(-10px); /* Move the image up by 10 pixels on hover */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+
+
+
+
+
+
+
+
+
+

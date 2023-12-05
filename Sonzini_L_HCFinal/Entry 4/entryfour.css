@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.background {
+    background-color: pink;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Move this behind other content */
+}
+nav {
+    background-color: palevioletred !important; /* Background color of the navigation bar */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+}
+
+#first-entry {
+    float: right; /* Float the list item to the right */
+    margin-right: 20px; /* Add spacing between this item and the previous one */
+}
+
+#first-entry a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+#first-entry span {
+    margin-left: 5px; /* Add some spacing between the text and arrow */
+}
+
+#first-entry .arrow {
+    display: inline-block;
+    margin-left: 5px; /* Initial position */
+}
+
+li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add some spacing between list items */
+}
+
+/* NAV BAR TEXT VISUALS */
+a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Text color for links */
+    font-family: 'Quicksand', sans-serif; /* Use Arial as the font, fallback to sans-serif if Arial is not available */
+    font-weight: bold;
+}
+
+.background {
+    background-image: url('https://discord.com/channels/1158576611747172473/1158576612300824598')
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.text-box {
+    font-size: 100px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-)
+}
+.grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-rows: repeat(4, 1fr); /* 4 rows */
+            gap: 10px; /* Gap between grid items */
+            height: 100vh; /* Set the grid container to full viewport height */
+            padding-top: 30px; 
+        }
+
+        /* Style for each grid item */
+        .grid-item {
+            background-color: palevioletred; /* Background color */
+            border: none; /* Border for each item */
+            text-align: center; /* Center the content */
+            padding: 10px; /* Add some padding */
+        }
+
+    .grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes moveRight {
+    from {
+        left: 0; /* Start position on the left */
+    }
+    to {
+        left: 90%; /* End position on the right (adjust as needed) */
+    }
+}
+
+
+.floating-image {
+    position: absolute;
+    width: 45vh; /* Set the width to your desired size */
+    height: 8vh; /* Set the height to your desired size */
+    top: 10vmin; /* Adjust the top position for the first image */
+    left: 10vmin; /* Adjust the left position for the first image */
+z-index: 2;
+ position: absolute;
+    animation: moveRight 7s linear infinite; /* Use the animation and specify its duration, timing function, and iteration count */
+}
+.floating-image2 {
+    position: absolute;
+    width: 18vh; /* Set the width to your desired size */
+    height: 8vh; /* Set the height to your desired size */
+    top: 80vmin; /* Adjust the top position for the first image */
+    left: 40vmin; /* Adjust the left position for the first image */
+z-index: 2;
+ position: absolute;
+    animation: moveRight 10s linear infinite; /* Use the animation and specify its duration, timing function, and iteration count */
+}
+.floating-image3 {
+    position: absolute;
+    width: 38vh; /* Set the width to your desired size */
+    height: 8vh; /* Set the height to your desired size */
+    top: 140vmin; /* Adjust the top position for the first image */
+    left: 40vmin; /* Adjust the left position for the first image */
+z-index: 2;
+ position: absolute;
+    animation: moveRight 6s linear infinite; /* Use the animation and specify its duration, timing function, and iteration count */
+}
+.floating-image4 {
+    position: absolute;
+    width: 65vh; /* Set the width to your desired size */
+    height: 8vh; /* Set the height to your desired size */
+    top: 242vmin; /* Adjust the top position for the first image */
+    left: 40vmin; /* Adjust the left position for the first image */
+z-index: 2;
+ position: absolute;
+    animation: moveRight 10s linear infinite; /* Use the animation and specify its duration, timing function, and iteration count */
+}

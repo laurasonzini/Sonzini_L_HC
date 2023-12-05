@@ -1,0 +1,82 @@
+nav {
+    background-color: palevioletred !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333;
+    /* Other styles */
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+#first-entry {
+    float: right; 
+    margin-right: 20px; 
+}
+
+#first-entry a {
+    color: white; 
+    text-decoration: none; 
+}
+
+#first-entry span {
+    margin-left: 5px; 
+}
+
+#first-entry .arrow {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+
+/* NAV BAR TEXT VISUALS*/
+a {
+    text-decoration: none; 
+    color: white; 
+font-family: 'Quicksand', sans-serif; 
+font-weight: regular;}
+
+
+body {
+    margin: 0;
+    padding-top: 50px; /* Ensure content starts below the fixed nav bar */
+    /* Other styles for body */
+    background-color: black;
+}
+.image-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px; /* Adjust dimensions as needed */
+    height: 720px; /* Adjust dimensions as needed */
+    overflow: hidden; /* Hide overflow */
+}
+
+
+.bottom-image,
+.top-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: clip-path 0.3s ease; /* Transition for clip-path */
+}
+
+.top-image {
+    clip-path: circle(0% at 50% 50%); /* Initially, hide the top image */
+}
+
+.image-container:hover .top-image {
+    clip-path: circle(60% at 50% 50%); /* Reveal the top image on hover */
+}

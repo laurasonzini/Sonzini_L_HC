@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Rubik+Mono+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav {
+    background-color: palevioletred !important;
+    font-size: 16px; 
+
+}
+ul {
+    list-style-type: none; 
+    padding: 0; /
+}
+#first-entry {
+    float: right; 
+    margin-right: 20px; 
+}
+
+#first-entry a {
+    color: white; 
+    text-decoration: none; 
+}
+
+#first-entry span {
+    margin-left: 5px; 
+}
+
+#first-entry .arrow {
+    display: inline-block;
+    margin-left: 5px; 
+}
+li:first-child {
+    float: left;
+    margin-right: 20px;
+}
+
+
+
+/* NAV BAR TEXT VISUALS*/
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 14px; /* Adjust the font size for the links */
+}
+
+
+Body {font-family: 'Poppins', sans-serif;
+font-family: 'Rubik Mono One', sans-serif; color:cadetblue; padding: 20px; font-size:50px}
+.heart {
+  font-size: 2em; 
+  color: blue; 
+  animation: rotate 4s linear infinite;
+  background: transparent; 
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+
+  }
+}

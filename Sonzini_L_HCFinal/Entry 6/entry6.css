@@ -1,0 +1,63 @@
+
+.background-image {
+    background-image: url('https://cdn.discordapp.com/attachments/1158576612300824598/1181420390489280624/background.png?ex=6580fe7a&is=656e897a&hm=c2db9f547424a04e421cbbfeadd0002fc160ae95f46eeada5f81e00b263ad700&');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll; /* Make the background image fixed */
+    width: 100vw;
+    height: 100vh;
+}
+.draggable {
+    width: 140px; /* Set the width */
+    height: 140px; /* Set the height to match the width */
+    position: absolute;
+    object-fit: cover;
+    cursor: pointer;
+    user-drag: none;
+    user-select: none;
+    /* Set initial position */
+    top: 100px;
+    left: 100px;
+}
+nav {
+    background-color: palevioletred !important ;
+     
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+#first-entry {
+    float: right; 
+    margin-right: 20px; /* Add spacing between this item and the previous one */
+}
+
+#first-entry a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+#first-entry span {
+    margin-left: 5px; /* Add some spacing between the text and arrow */
+}
+
+#first-entry .arrow {
+    display: inline-block;
+    margin-left: 5px; /* Initial position */
+}
+
+
+li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add some spacing between list items */
+}
+
+
+/* NAV BAR TEXT VISUALS*/
+a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Text color for links */
+font-family: 'Quicksand', sans-serif; /* Use Arial as the font, fallback to sans-serif if Arial is not available */
+font-weight: regular;}

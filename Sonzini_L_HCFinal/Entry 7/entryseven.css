@@ -1,0 +1,112 @@
+nav {
+    background-color: palevioletred !important ; /
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+#first-entry {
+    float: right; 
+    margin-right: 20px; /* Add spacing between this item and the previous one */
+}
+
+#first-entry a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+#first-entry span {
+    margin-left: 5px; /* Add some spacing between the text and arrow */
+}
+
+#first-entry .arrow {
+    display: inline-block;
+    margin-left: 5px; /* Initial position */
+}
+
+
+li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add some spacing between list items */
+}
+
+
+/* NAV BAR TEXT VISUALS */
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: regular;
+}
+
+/* Your existing navigation bar styles */
+nav {
+    background-color: palevioletred !important;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#first-entry {
+    float: right;
+    margin-right: 20px;
+}
+
+#first-entry a {
+    color: white;
+}
+
+#first-entry span {
+    margin-left: 5px;
+}
+
+#first-entry .arrow {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Styles for the image reveal effect */
+.image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+.image-box {
+    position: relative;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.image-box img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hidden-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.image-box:hover .hidden-image {
+    opacity: 1;
+    transform: scale(1);
+}

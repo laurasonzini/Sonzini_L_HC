@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+    align-items: center;
+    background-color: #f0f0f0; /* Background color for the page */
+}
+
+nav {
+    background-color: palevioletred;
+    width: 100%; /* Ensure the nav takes the full width */
+    z-index: 1; /* Ensure the nav is above other elements */
+    height: 40px; /* Set the height of the navigation bar */
+}
+
+ul {
+    list-style-type: none;
+    display: flex; /* Display list items horizontally */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+    height: 100%; /* Make the ul take the full height of the nav */
+    padding: 0 20px; /* Add padding horizontally to the list items */
+}
+
+/* Style for the navigation links */
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: regular;
+}
+
+/* Remove margin-left from li and add padding instead */
+li {
+    height: 40px; /* Set the height equal to the nav height */
+    padding-left: 20px; /* Adjust padding as needed */
+}
+li:first-child {
+    margin-right: auto; /* Push the "Previous Entry" link to the left */
+}
+
+
+
+.image-wrapper {
+    position: relative;
+}
+
+.image {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+    border: 5px solid darkred;
+    box-sizing: border-box;
+    position: absolute; /* Position each image absolutely */
+}
+
+/* Add your nth-child rules as you previously had */
+
+.center {
+    width: 1200px; /* Adjust the width to make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+    position: fixed; /* Fix the image position */
+    top: 50%; /* Position it in the center vertically */
+    left: 50%; /* Position it in the center horizontally */
+    transform: translate(-50%, -50%); /* Center the image precisely */
+}
+
+
+.image-stack {
+    position: absolute;
+    top: 50%; /* Adjust vertically */
+    left: 50%; /* Adjust horizontally */
+    transform: translate(-50%, -50%);
+}
+
+.image {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+    border: 5px solid darkred; /* Add a red border around the images */
+    box-sizing: border-box; /* Include border in the width/height calculations */
+}
+
+.image:hover {
+    transform: scale(8); /* Enlarge the image on hover (twice its original size) */
+}
+
+.image:nth-child(1) {
+    top: 260px;
+    left: 32px;
+}
+
+.image:nth-child(2) {
+    top: 265px;
+    left: -110px;
+}
+.image:nth-child(3) {
+    top: 320px;
+    left: -90px;
+}
+
+.image:nth-child(4) {
+    top: 360px;
+    left: -135px;
+}
+.image:nth-child(5) {
+    top: 355px;
+    left: -10px;
+}
+
+.image:nth-child(6) {
+    top: 340px;
+    left: 40px;
+}
+
+
+

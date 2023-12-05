@@ -1,0 +1,64 @@
+nav {
+    background-color: palevioletred !important ; /* Background color of the navigation bar */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+}
+#first-entry {
+    float: right; /* Float the list item to the right */
+    margin-right: 20px; /* Add spacing between this item and the previous one */
+}
+
+#first-entry a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+#first-entry span {
+    margin-left: 5px; /* Add some spacing between the text and arrow */
+}
+
+#first-entry .arrow {
+    display: inline-block;
+    margin-left: 5px; /* Initial position */
+    transition: margin-left 0.5s ease-in-out; /* Animation transition */
+}
+
+#first-entry:hover .arrow {
+    margin-left: 10px; /* New position on hover */
+}
+
+
+li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add some spacing between list items */
+}
+
+
+/* NAV BAR TEXT VISUALS*/
+a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Text color for links */
+font-family: 'Quicksand', sans-serif; /* Use Arial as the font, fallback to sans-serif if Arial is not available */
+font-weight: regular;}
+div {font-family: 'Quicksand', sans-serif;
+top: 300px;}
+
+
+ .centered-image {
+            margin: 20vh 0 0 20px;
+            display: block;
+            width: 46vh;
+            height:60vh;
+            left:20px;
+        }
+.centered-image {
+        max-width: 50%;
+        margin-right: 20px;}
+    p {
+    width: 80%;
+    margin: 10px 0;
+    font-family: 'Quicksand', sans-serif; /* Add this line to set the font to Quicksand */
+}

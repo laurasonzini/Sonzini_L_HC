@@ -1,0 +1,179 @@
+
+.image2 {
+    width: 400px;
+    height: 320px;
+    margin-left: 20px;
+}
+
+.image3 {
+    width: 300px;
+    height: 600px;
+    margin-left: 20px;
+}
+
+
+nav {
+    background-color: palevioletred !important ; 
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+}
+#first-entry {
+    float: right; 
+    margin-right: 20px; 
+}
+
+#first-entry a {
+    color: white; 
+    text-decoration: none; 
+}
+
+#first-entry span {
+    margin-left: 5px; 
+}
+
+#first-entry .arrow {
+    display: inline-block;
+    margin-left: 5px; 
+    transition: margin-left 0.5s ease-in-out; 
+}
+
+#first-entry:hover .arrow {
+    margin-left: 10px; 
+}
+
+
+li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+
+/* NAV BAR TEXT VISUALS*/
+a {
+    text-decoration: none; 
+    color: white; 
+font-family: 'Quicksand', sans-serif; 
+font-weight: bold;}
+div {font-family: 'Quicksand', sans-serif;
+top: 300px;}
+
+.background {
+    background-image: url('https://cdn.discordapp.com/attachments/1158576612300824598/1158580462072123513/background.png?ex=651cc3a3&is=651b7223&hm=f602059e22d960bbb6f8ed8aa5bc9fd703768bebd27a9cd52f8e88272b5aa326&'); /* Replace with your background image URL */
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.text-box {
+    font-size: 100px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+}
+span {
+    animation: mover 6s linear infinite;
+    display: inline-block;
+    color: #fff;
+    font-weight: bolder;}
+
+    body {
+    margin: 0;
+    overflow: hidden; 
+}
+
+.moving-image {
+    position: absolute;
+    animation: moveImage 5s linear infinite; 
+}
+
+@keyframes moveImage {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 100%; 
+    }
+}
+
+.floating-image {
+    position: absolute;
+    width: 200px; 
+    height: 200px; 
+    top: -70px; 
+    left: 190px; 
+}
+
+.floating-image2 {
+    position: absolute;
+    width: 250px; 
+    height: 320px; 
+    top: 75px; 
+    left: 600px; 
+}
+
+.floating-image3 {
+    position: absolute;
+    width: 150px;
+    height: 150px; 
+    top: 250px; 
+    left: 530px; 
+}
+.floating-image4 {
+    position: absolute;
+    width: 300px; 
+    height: 350px; 
+    top: 260px; 
+    left:-200px; 
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; 
+    transform: perspective(500px); 
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s, opacity 0.5s; 
+}
+
+.image-container .image-text {
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    transform: translate(0, -50%); 
+    background: white; 
+    color: black; 
+    padding: 10px;
+    opacity: 0;
+    transform: rotateY(90deg);
+    transition: transform 0.5s, opacity 0.5s;
+    z-index: 2;
+    max-width: 100%; 
+    text-align: center; 
+    word-wrap: break-word;
+    box-sizing: border-box; 
+}
+
+
+
+.image-container:hover img {
+    transform: rotateY(180deg);
+    opacity: 0.5; 
+}
+
+.image-container:hover .image-text {
+    transform: rotateY(0deg); 
+    opacity: 1; 
+}

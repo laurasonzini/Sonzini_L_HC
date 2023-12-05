@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav {
+    background-color: palevioletred !important ; /
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+#first-entry {
+    float: right; 
+    margin-right: 20px; /* Add spacing between this item and the previous one */
+}
+
+#first-entry a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+#first-entry span {
+    margin-left: 5px; /* Add some spacing between the text and arrow */
+}
+
+#first-entry .arrow {
+    display: inline-block;
+    margin-left: 5px; /* Initial position */
+}
+
+
+li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add some spacing between list items */
+}
+
+
+/* NAV BAR TEXT VISUALS*/
+a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Text color for links */
+font-family: 'Quicksand', sans-serif; /* Use Arial as the font, fallback to sans-serif if Arial is not available */
+font-weight: regular;}
+
+.audio-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; 
+             z-index: 1;/* Make the container take up the full viewport height */
+        }
+.text-box {
+    font-size: 100px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50px; /* Adjust the top position to avoid overlapping the navigation */
+    left: 50px;
+    transform: translate(-50%, -50%);
+}
+span {
+    animation: mover 6s linear infinite;
+    display: inline-block;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.container {
+    position: relative; /* Make the container a reference for positioning */
+    height: 100vh; /* Make the container take up the full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+
+
+
